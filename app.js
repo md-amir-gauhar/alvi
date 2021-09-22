@@ -99,6 +99,22 @@ function change(e) {
 	}
 }
 
+// Complexities
+
+var best="";
+var avg="";
+var worst="";
+function fill_complexities(best, avg, worst){
+	document.getElementById("best").innerHTML = "Best";
+	document.getElementById("btc").innerHTML = best;
+	document.getElementById("avg").innerHTML = "Average";
+	document.getElementById("atc").innerHTML = avg;
+	document.getElementById("worst").innerHTML = "Worst";
+	document.getElementById("wtc").innerHTML = worst;
+	document.getElementById("texthere").innerHTML = " Time Complexity";
+	
+}
+
 // Reload the page
 
 function reset() {
@@ -140,13 +156,7 @@ async function SelectionSort() {
 		document.getElementById(curr_id).style.backgroundColor = def;
 		document.getElementById(nxt_ele).style.backgroundColor = def;
 	}
-	// document.getElementById("best").innerHTML = "Best";
-	// document.getElementById("btc").innerHTML = "Ω(n^2)";
-	// document.getElementById("avg").innerHTML = "Average";
-	// document.getElementById("atc").innerHTML = "Θ(n^2)";
-	// document.getElementById("worst").innerHTML = "Worst";
-	// document.getElementById("wtc").innerHTML = "O(n^2)";
-	// document.getElementById("texthere").innerHTML = "Time Complexity";
+	fill_complexities("Ω(n^2)","Θ(n^2)","O(n^2)");
 	Finished_Sorting();
 
 }
@@ -185,7 +195,7 @@ async function BubbleSort() {
 		}
 		if (has_swap == false) break;
 	}
-	// fill_complexities("Ω(n)","Θ(n^2)","O(n^2)");
+	fill_complexities("Ω(n)","Θ(n^2)","O(n^2)");
 	Finished_Sorting();
 }
 
@@ -217,7 +227,7 @@ async function InsertionSort() {
 		document.getElementById(curr_id).style.backgroundColor = def;
 		document.getElementById(nxt_ele).style.backgroundColor = def;
 	}
-	// fill_complexities("Ω(n)","Θ(n^2)","O(n^2)");
+	fill_complexities("Ω(n)","Θ(n^2)","O(n^2)");
 	Finished_Sorting();
 }
 
@@ -275,7 +285,7 @@ async function mergeSort(l, r, d) {
 async function MergeSort() {
 	let delay = Disable_The_Input();
 	await mergeSort(0, bars.length - 1, delay);
-	// fill_complexities("Ω(n log(n))","Θ(n log(n))","O(n log(n))");
+	fill_complexities("Ω(n log(n))","Θ(n log(n))","O(n log(n))");
 	Finished_Sorting();
 }
 
@@ -336,6 +346,6 @@ async function quickSort(l, r, d) {
 async function QuickSort() {
 	let delay = Disable_The_Input();
 	await quickSort(0, bars.length - 1, delay);
-	// fill_complexities("Ω(n log(n))","Θ(n log(n))","O(n^2)");
+	fill_complexities("Ω(n log(n))","Θ(n log(n))","O(n^2)");
 	Finished_Sorting();
 }
