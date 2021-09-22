@@ -18,8 +18,9 @@ body {
   gap: 10px;
 }
 
-.far {
-  font-size: 4em;
+.far,
+.fas {
+  font-size: 3em;
 }
 
 .btn {
@@ -38,7 +39,9 @@ body {
 
 .bar{
 	border: 0.05vw solid #e41f7b;
-	width:0.7vw;
+	width:0.8vw;
 	margin:0.1vw;
 	background-color: #0b0c10;
+  color: white;
+  font-size: 9px;
 }
