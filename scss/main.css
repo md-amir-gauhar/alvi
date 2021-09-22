@@ -29,19 +29,19 @@ body {
 }
 
 .container {
-	display: flex;
-	margin: 0 auto;
-	width: intrinsic;           
-  width: -moz-max-content;   
- 	width: -webkit-max-content;
-	height: 70vh;
+  display: flex;
+  margin: 0 auto;
+  width: intrinsic;
+  width: -webkit-max-content;
+  height: 70vh;
 }
 
-.bar{
-	border: 0.05vw solid #e41f7b;
-	width:0.8vw;
-	margin:0.1vw;
-	background-color: #0b0c10;
+.bar {
+  border: 0.05vw solid #e41f7b;
+  width: 0.8vw;
+  margin: 0.1vw;
+  background-color: #0b0c10;
   color: white;
   font-size: 9px;
 }
+/*# sourceMappingURL=main.css.map */
