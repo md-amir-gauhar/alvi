@@ -6,7 +6,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Fuggles', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -81,9 +81,12 @@ select {
   cursor: crosshair;
 }
 
-.far,
-.fas {
+.far {
   font-size: 3em;
+}
+
+.fas {
+  font-size: 2.5em;
 }
 
 .btn {
