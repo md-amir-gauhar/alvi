@@ -113,11 +113,51 @@ select {
 
 .bar {
   border: 0.05vw solid #e41f7b;
-  width: 1vw;
+  width: 1.1vw;
   margin: 0.1vw;
   background-color: #0b0c10;
   color: white;
-  font-size: 9px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.bar1 {
+  border: 0.05vw solid #e41f7b;
+  width: 1.3vw;
+  margin: 0.1vw;
+  background-color: #0b0c10;
+  color: white;
+  font-size: 13px;
+  text-align: center;
+}
+
+.bar2 {
+  border: 0.05vw solid #e41f7b;
+  width: 1.7vw;
+  margin: 0.1vw;
+  background-color: #0b0c10;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.bar3 {
+  border: 0.05vw solid #e41f7b;
+  width: 2.5vw;
+  margin: 0.1vw;
+  background-color: #0b0c10;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.bar4 {
+  border: 0.05vw solid #e41f7b;
+  width: 4vw;
+  margin: 0.1vw;
+  background-color: #0b0c10;
+  color: white;
+  font-size: 16px;
   text-align: center;
 }
 
