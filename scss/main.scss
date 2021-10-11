@@ -1,29 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
   font-family: 'Roboto', sans-serif;
-}
-
-header {
-  height: 10vh;
-  width: 100%;
-  position: relative;
-  background-color: #6ECB63;
-}
-
-header > h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 4em;
 }
 
 body {
@@ -31,6 +14,23 @@ body {
   flex-direction: column;
   gap: 10px;
   align-items: center;
+}
+
+header {
+  height: 15vh;
+  width: 100%;
+  position: relative;
+  background-color: #000;
+}
+
+header > h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.75em;
+  color: #fff;
+  text-decoration: underline #e41f7b;
 }
 
 .nav__top {
@@ -57,20 +57,27 @@ select {
   text-align: center;
   border-radius: 0.5em 0.5em 0 0;
   outline: none;
+  border: none;
+  border-bottom: 2px solid #e41f7b;
+  cursor: crosshair;
 }
 
-option {
-  border-radius: 33px 30px / 33px 30px;
-}
-
-.far,
-.fas {
+.far {
   font-size: 3em;
+}
+
+.fas {
+  font-size: 2.5em;
 }
 
 .btn {
   border: none;
   background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }
 
 .container {
@@ -84,11 +91,52 @@ option {
 
 .bar{
 	border: 0.05vw solid #e41f7b;
-	width:0.75vw;
-	margin:0.1vw;
+	width: 1.1vw;
+	margin: 0.1vw;
 	background-color: #0b0c10;
   color: white;
-  font-size: 9px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.bar1{
+	border: 0.05vw solid #e41f7b;
+	width: 1.3vw;
+	margin: 0.1vw;
+	background-color: #0b0c10;
+  color: white;
+  font-size: 13px;
+  text-align: center;
+}
+
+.bar2{
+	border: 0.05vw solid #e41f7b;
+	width: 1.7vw;
+	margin: 0.1vw;
+	background-color: #0b0c10;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.bar3{
+	border: 0.05vw solid #e41f7b;
+	width: 2.5vw;
+	margin: 0.1vw;
+	background-color: #0b0c10;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.bar4{
+	border: 0.05vw solid #e41f7b;
+	width: 4vw;
+	margin: 0.1vw;
+	background-color: #0b0c10;
+  color: white;
+  font-size: 16px;
+  text-align: center;
 }
 
 #info {
@@ -98,8 +146,9 @@ option {
   align-items: center;
   justify-content: center;
   padding-bottom: 1em;
-  background-color: #6ECB63;
+  background-color: #000;
   width: 100%;
+  color: #fff;
 }
 
 .manage {

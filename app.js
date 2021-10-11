@@ -1,5 +1,5 @@
 let bars = [];
-const def = "#ffd700", chng = "#431f91", finished = "#ff0000", selected = "#66fcf1";
+const def = "#ffd700", chng = "#431f91", finished = "#8D93AB", selected = "#66fcf1";
 
 window.onload = setup();
 
@@ -23,9 +23,31 @@ function generateBars(n = -1) {
 	bars = [];
 	let container = document.querySelector(".container");
 	n = n < 0 ? Math.random() * 20 : n;
-	for (let i = 0; i < n; i++) {
-		let rand = Math.floor(2 + Math.random() * 98);
-		bars.push('<div class="bar" id="' + i + '" style="height:' + rand + '%">' + String(rand) + '</div>');
+	if (n <= 20) {
+		for (let i = 0; i < n; i++) {
+			let rand = Math.floor(4 + Math.random() * 96);
+			bars.push('<div class="bar4" id="' + i + '" style="height:' + rand + '%">' + String(rand) + '</div>');
+		}
+	} else if (n <= 35) {
+		for (let i = 0; i < n; i++) {
+			let rand = Math.floor(4 + Math.random() * 96);
+			bars.push('<div class="bar3" id="' + i + '" style="height:' + rand + '%">' + String(rand) + '</div>');
+		}
+	} else if (n <= 50) {
+		for (let i = 0; i < n; i++) {
+			let rand = Math.floor(4 + Math.random() * 96);
+			bars.push('<div class="bar2" id="' + i + '" style="height:' + rand + '%">' + String(rand) + '</div>');
+		}
+	} else if (n <= 65) {
+		for (let i = 0; i < n; i++) {
+			let rand = Math.floor(4 + Math.random() * 96);
+			bars.push('<div class="bar1" id="' + i + '" style="height:' + rand + '%">' + String(rand) + '</div>');
+		}
+	} else {
+		for (let i = 0; i < n; i++) {
+			let rand = Math.floor(4 + Math.random() * 96);
+			bars.push('<div class="bar" id="' + i + '" style="height:' + rand + '%">' + String(rand) + '</div>');
+		}
 	}
 	container.innerHTML = bars.join('');
 }
